@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <!--fondo-->
 
     <ImageView
         android:id="@+id/fondoSplash"
@@ -16,19 +17,41 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </ImageView>
-
     <!--logo-->
+    <!--View SCRIM-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="@color/white"></View>
+
+
     <ImageView
         android:id="@+id/logoprincipal"
         android:layout_width="150dp"
         android:layout_height="180dp"
-        android:src=""
+        android:src="@mipmap/sya_launcher"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline5"
         tools:ignore="ContentDescription" />
-    <!--TITULO-->
+    <!--slogan con efecto-->
+    <TextView
+        android:id="@+id/Titulo"
+        style="@style/tituloapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bromelloregular"
+        android:gravity="center"
+        android:text="Start your adventure"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"

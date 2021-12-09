@@ -8,8 +8,6 @@ import android.os.Looper;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-import android.view.animation.TranslateAnimation;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,12 +15,12 @@ import com.bumptech.glide.Glide;
 
 
 
-public class Splash extends AppCompatActivity {
+public class SYABienvenida extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.splash);
+        setContentView(R.layout.SYABienvenida);
         openApp(true);
 
         //implementar animacion  ------------------LOGO PRINCIPAL------------------
@@ -43,7 +41,7 @@ public class Splash extends AppCompatActivity {
             @Override
             public void run() {
                 //aqui indicamos que vaya del Splash al login
-                Intent intent = new Intent(Splash.this, com.asier.aranda.startya.MainActivity.class);
+                Intent intent = new Intent(SYABienvenida.this, SYAIngreso.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);

@@ -5,12 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!--    <ImageView-->
-    <!--        android:id="@+id/backView"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="match_parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        tools:layout_editor_absoluteY="0dp"></ImageView>-->
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
