@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </ImageView>
-    <!--logo-->
+
     <!--View SCRIM-->
     <View
         android:layout_width="match_parent"
@@ -25,12 +25,12 @@
         android:alpha="0.5"
         android:background="@color/white"></View>
 
-
+    <!--logo-->
     <ImageView
         android:id="@+id/logoprincipal"
         android:layout_width="150dp"
         android:layout_height="180dp"
-        android:src="@mipmap/sya_launcher"
+        android:src="@mipmap/sya_launcher_foreground"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"

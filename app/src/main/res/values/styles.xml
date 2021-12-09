@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!--<style name="myButtonInverse" parent="Widget.MaterialComponents.Button.OutlinedButton">
         <item name="android:layout_width">0dp</item>
@@ -12,7 +12,7 @@
     <style name="myButtonRegistro">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:backgroundTint">@color/naranjaExam</item>
+        <item name="android:backgroundTint">@color/negroExam</item>
         <item name="android:textColor">@color/white</item>
     </style>
 
@@ -22,6 +22,15 @@
         <item name="android:layout_marginTop">5dp</item>
         <item name="android:backgroundTint">@color/naranjaExam</item>
         <item name="android:textColor">@color/white</item>
+
+        <!--     El color de la sombra-->
+        <item name="android:shadowColor">@color/grisExam</item>
+        <!--     El radio o expansión que queremos-->
+        <item name="android:shadowRadius">10</item>
+        <!--     El desplazamiento horizontal-->
+        <item name="android:shadowDx">2</item>
+        <!--     El desplazamiento vertical-->
+        <item name="android:shadowDy">5</item>
     </style>
 
 

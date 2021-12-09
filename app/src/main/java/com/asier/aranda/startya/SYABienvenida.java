@@ -20,7 +20,7 @@ public class SYABienvenida extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.SYABienvenida);
+        setContentView(R.layout.syabienvenida);
         openApp(true);
 
         //implementar animacion  ------------------LOGO PRINCIPAL------------------

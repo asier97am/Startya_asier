@@ -3,24 +3,43 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/grisExam">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til1"
+
+    <TextView
+        android:id="@+id/txLogin"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:boxBackgroundColor="@color/white"
+        android:gravity="left"
+        android:onClick="openRegistro"
+        android:text="LOG IN"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/til5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+         />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@color/grisExam"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:startIconDrawable="@drawable/username_foreground">
-        <!--boxBackground-->
-        <!--startIconDrawable-->
+
         <EditText
-            android:id="@+id/username"
+            android:id="@+id/username1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
+            android:text="Username"
+            android:textColor="@color/white"
+
             android:maxLines="1"
             tools:ignore="SpeakableTextPresentCheck" />
 
@@ -31,12 +50,11 @@
         android:id="@+id/til2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:boxBackgroundColor="@color/white"
+        app:boxBackgroundColor="@color/grisExam"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/til1"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/til5"
         app:passwordToggleEnabled="true"
         app:startIconDrawable="@drawable/password_foreground">
 
@@ -46,37 +64,39 @@
             android:layout_height="wrap_content"
             android:hint="Password"
             android:inputType="textPassword"
-            android:maxLines="1" />
+            android:maxLines="1"
+            android:textColorHint="@color/white"
+            tools:ignore="SpeakableTextPresentCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/login"
         style="@style/myButtonLogin"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="64dp"
         android:onClick="openMainActivity"
-        android:text="Login"
-        app:layout_constraintBottom_toTopOf="@+id/registro"
+        android:text="Login in"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/til2" />
 
-    <Button
-        android:id="@+id/registro"
-        style="@style/myButtonRegistro"
+    <TextView
+        android:id="@+id/txRegistro"
         android:onClick="openRegistro"
-        android:text="Registro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="¿Primera vez? REGISTRARSE"
+        android:textSize="16dp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/guideline8"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/login" />
-
-
-
-
-
-
-
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -127,6 +147,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.65" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
