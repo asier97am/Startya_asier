@@ -12,7 +12,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="left"
-        android:onClick="openRegistro"
         android:text="LOG IN"
         android:textColor="@color/white"
         android:textSize="40dp"
