@@ -17,6 +17,19 @@
 
     </ImageView>
 
+    <!--logo-->
+    <ImageView
+        android:id="@+id/logoprincipal"
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:src=""
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        tools:ignore="ContentDescription" />
+    <!--TITULO-->
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
