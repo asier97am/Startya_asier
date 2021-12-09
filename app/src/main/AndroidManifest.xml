@@ -21,13 +21,11 @@
         <activity
             android:name=".SYAIngreso"
             android:exported="true"
-            android:parentActivityName=".SYABienvenida">
-        </activity>
+            android:parentActivityName=".SYABienvenida"></activity>
         <activity
             android:name=".SYARegistro"
             android:exported="true"
-            android:parentActivityName=".SYAIngreso">
-        </activity>
+            android:parentActivityName=".SYAIngreso"></activity>
     </application>
 
 </manifest>

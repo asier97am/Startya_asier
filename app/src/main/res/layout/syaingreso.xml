@@ -19,18 +19,18 @@
         app:layout_constraintBottom_toTopOf="@+id/til5"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/guideline5"
-         />
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:boxBackgroundColor="@color/grisExam"
         android:textColorHint="@color/white"
+        app:boxBackgroundColor="@color/grisExam"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
-    app:layout_constraintEnd_toStartOf="@+id/guideline3"
-   app:layout_constraintStart_toStartOf="@+id/guideline2"
-   app:startIconDrawable="@drawable/username_foreground">
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:startIconDrawable="@drawable/username_foreground">
 
         <EditText
             android:id="@+id/username1"
@@ -48,9 +48,9 @@
         android:id="@+id/til2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:boxBackgroundColor="@color/grisExam"
-        android:textColorHint="@color/white"
         android:layout_marginTop="16dp"
+        android:textColorHint="@color/white"
+        app:boxBackgroundColor="@color/grisExam"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/til5"
@@ -84,16 +84,16 @@
 
     <TextView
         android:id="@+id/txRegistro"
-        android:onClick="openRegistro"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         android:minHeight="48dp"
+        android:onClick="openRegistro"
         android:text="¿Primera vez? REGISTRARSE"
-        android:textSize="16dp"
         android:textColor="@color/white"
         android:textColorLink="@color/blue"
+        android:textSize="16dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline8"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -148,8 +148,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.65" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
